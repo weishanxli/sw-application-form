@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Software Engineer Application</title>
+    <link rel='stylesheet' href='styles.css'>
+  </head>
+  <body>
+    <h1 id='title'>Software Engineer Application</h1>
+    <p id='description'><em>Thank you for taking the time to apply for this position</em></p>
+  </body>
+  <form method='post' id='survey-form'>
+    <fieldset>
+      <legend>General Information</legend>
+      <label 
+        id=name-label
+        for='name'
+        >Name 
+      </label>
+      <input 
+        type='text' 
+        id='name' 
+        placeholder='Enter your name' 
+        required />
+      <label 
+        id='email-label'
+        for='email'
+        >Email
+      </label>
+      <input 
+        type='email' 
+        id='email'  
+        placeholder='Enter your email' 
+        required />
+      <label 
+        id='number-label'
+        for='number'
+        >Graduation Month
+      </label>
+      <input 
+        type='number' 
+        id='number' 
+        min='0'
+        max='12' 
+        placeholder='Graduation Month'
+        required />
+      <label>Graduation Year</label>
+      <input 
+        type='number' 
+        min='2020' 
+        max='2025' 
+        placeholder='Graduation Year' 
+        required />
+    </fieldset>
+    <fieldset>
+      <legend>Referral Source</legend>
+      <label>
+        Have you ever been employed at this company?
+      </label>
+      <label
+        class='radio-text'>
+        <input
+          type='radio'
+          class='inline'
+          name='previously-worked'
+          value='1'
+          />Yes
+      </label>
+      <label
+        class='radio-text'>
+        <input
+          type='radio'
+          class='inline'
+          name='previously-worked'
+          value='2'
+          />No
+      </label>
+      <label
+        class='radio-text'>
+        <input
+          type='radio'
+          class='inline'
+          name='previously-worked'
+          value='3'
+          />It's complicated
+      </label>
+      <label for='dropdown'>
+        How did you hear about this role?
+      </label>
+      <select 
+        id='dropdown'
+        required>
+        <option 
+          value=''
+          >Select source
+        </value>
+        <option 
+          value='1'
+          >Current Employee
+        </option>
+        <option 
+          value='2'
+          >Friend
+        </option>
+        <option 
+          value='3'
+          >Career Fair
+        </option>
+        <option 
+          value='4'
+          >InLinked
+        </option>
+        <option
+          value='5'
+          >DoorGlass
+        </option>
+        <option
+          value='5'
+          >Other
+        </option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <legend>Work Experience</legend>
+      <label>
+        Upload resume:
+        <input
+          id="resume"
+          type="file" 
+          name="file"
+          required/>
+      </label>
+      <label id='job-title'>
+        Current Job Title
+        <input 
+          type='text'
+          id='job-title'
+          required/>
+      </label>
+      <label id='years'>
+        Number of years
+        <input 
+          type='number'
+          id='years'
+          min='0'
+          max='100'
+          required/>
+      </label>
+      <label for='responsibilities'>
+        Job Responsibilites
+        <textarea
+          id='responsibilities'
+          rows=4
+          cols=30
+          required
+        ></textarea>
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>Final Steps</legend>
+      <label class='knowledge-check'>
+        <input 
+        type='checkbox' 
+        value='1'
+        class='inline'
+        required
+        />Check to indicate you have answered all questions accurately to the best of your knowledge
+      </label>
+      <label class='knowledge-check'>
+        <input 
+        type='checkbox' 
+        value='2'
+        class='inline'
+        required
+        />Check to indicate you have <strong>NOT</strong> answered all questions accurately to the best of your knowledge
+      </label>
+      <input
+        type='submit'
+        id='submit'
+        value='Submit'
+    </fieldset>
+  </form>
+</html>
